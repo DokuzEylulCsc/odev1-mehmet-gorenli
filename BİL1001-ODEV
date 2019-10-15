@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label for="id1">Metin kutusu 1</label>
+<input type='number' id='id1' />
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='number' id='id2' />
+<br><br>
+<button id="btn1">Topla</button>
+	<div id="sonuc"></div>
+	<script>
+		function Hesapla1()
+		{
+			var a1=Number (document.getElementById('id1').value);
+			var a2=Number (document.getElementById('id2').value);
+			var a3=a1+a2;
+			alert(a3);
+		}
+		
+	var hesapBtn=document.getElementById("btn1"); hesapBtn.onclick=Hesapla1;
+		
+	</script>
+<br><br>
+<label for="id3">Metin kutusu 3</label>
+<input type='number' id='id3' />
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='number' id='id4' />
+<br><br>
+<button id="btn2">Yapıştır</button>
+	<div id="sonuc"></div>
+	<script>
+		function Hesapla2()
+		{
+			var b1=String (document.getElementById('id3').value);
+			var b2=String (document.getElementById('id4').value);
+			var b3=b1+b2;
+			alert(b3);
+		}
+		
+	var hesapBtn=document.getElementById("btn2"); hesapBtn.onclick=Hesapla2;
+		
+	</script>
+	<p> <em> Mehmet Görenli  2019280032 </em>
+	</body>
+</html>
